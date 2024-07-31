@@ -1,4 +1,6 @@
-# Comments
+# Comments :-
+# uses '#' symbol 
+
 '''
 # Variable :-
 a = 1
@@ -58,7 +60,9 @@ a,b = "hello","hi"
 print(a)
 print(b)
 print(f'{type(a)}\n{type(b)}')
-'''
+
+# multiline string = ''' '''
+
 
 # -----------------
 # type - convertion
@@ -161,4 +165,17 @@ print(type(a))
 b = float(a)
 print(b)
 print(type(b))
+'''
+
+
+# Operators :-
+# 1. Arithmetic : + - * / % // **
+# 2. Comparison : == != < > <= >= , === (LHS = RHS, type(LHS) = type(RHS))
+# 3. Assignment : += , -=, *=, /=, //=, **=
+# 4. Logical : and or not 
+# 5. Bitwise : & | ^ ~ << >>
+# 6. Membership : in, not in
+# 7. Identity : is, is not
+
+
 
