@@ -170,12 +170,15 @@ else:
     print("else")
 
 # Small example : Check whether the user-input is odd or even, if even display 'It is even', if odd display 'It is odd'
+'''
 a = int(input("Enter number : "))
 if a%2==0:
     print(f"It is even")
 else:
     print(f"It is odd")
-    
+
+print(a%2==0)
+'''
 # Small example : check whether the user-input is leap year or not (%400==0, %100!=0 and %4==0, not leap)
 year = int(input("Enter year : "))
 if year%400 == 0:
@@ -185,3 +188,4 @@ elif year%100 != 0 and year%4 == 0:
 else:
     print(f"{year} is not a leap year")
 
+print((year%400==0) or (year%100 != 0 and year%4 == 0))
