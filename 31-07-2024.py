@@ -1,7 +1,7 @@
 # Comments :-
 # uses '#' symbol 
 
-'''
+
 # Variable :-
 a = 1
 _ = 2
@@ -165,4 +165,3 @@ print(type(a))
 b = float(a)
 print(b)
 print(type(b))
-'''

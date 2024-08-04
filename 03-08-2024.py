@@ -12,12 +12,12 @@ cbit
 '''
 # print(f"{a}\n{b}\n{c}")
 
-'''
+
 # Accessing using indexes
 a = "hello"
 print(a[2])
 print(a[-1])
-'''
+
 
 # Slicing :- string[a:b:c] -> a = start index(default=0), b = end index (but will not be considered in output)(default = last index + 1), c = step value (default = 1)
 a = "Welcome"
