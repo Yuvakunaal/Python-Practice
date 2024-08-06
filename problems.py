@@ -1,0 +1,67 @@
+# Write a python code to find the factorial of a number :-
+# 3 = 1*2*3
+def factorial(num):
+    result = 1
+    for i in range(1,num+1):
+        result *= i
+    return result
+a = factorial(4)
+print(a)
+
+# Write a python code to find first 'n' fibonacii numbers :-
+# n = 5, 0 1 1 2 3
+def fibo(n):
+    a = 0
+    b = 1
+    if n==1:
+        print(a)
+    elif n==2:
+        print(a,b)
+    else:
+        print(a,b,end=" ")
+        for i in range(n-2):
+            c = a+b
+            a = b
+            b = c
+            print(c,end=" ")
+fibo(10)
+
+# Write a python code to count no.of vowels and consonants in a string
+def count_v_c(s):
+    s = s.lower()
+    v = 0
+    c = 0
+    for i in s:
+        if i in "aeiou":
+            v+=1
+        else:
+            c+=1
+    return v,c
+vowels, consonants = count_v_c("kunaalmEgh")
+print(f"Count of Vowels = {vowels}, Count of Consonants = {consonants}")
+
+# Write a python code to check whether the string is palindrome or not
+# abcddcba = 0 1 2 3 -4 -3 -2 -1
+def is_pali(s):
+    for i in range(len(s)//2):
+        if s[i] != s[-i-1]:
+            return "Not Palindrome"
+    return "Palindrome"
+ans = is_pali("malayllam")
+print(ans)
+
+
+# Write a python code to check whether two strings are anagrams or not
+# s1 = "cat", s2 = "tac" -> anagram
+def is_anag(s1,s2):
+    if len(s1) != len(s2):
+        return "Not Anagram"
+    s11 = list(s1)
+    s11.sort()
+    s22 = list(s2)
+    s22.sort()
+    if s11 == s22:
+        return "Anagram"
+    return "Not Anagram"
+a = is_anag("cat","tac")
+print(a)

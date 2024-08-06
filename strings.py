@@ -1,3 +1,5 @@
+# 04-08-2024
+
 # Strings continuation
 
 # Mutable = which can be changed, immutable = which cannot be changed
