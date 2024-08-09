@@ -69,7 +69,7 @@ for i in l:
     print(i)
 
 
-# List comprehension
+# List comprehension (*****)
 # print squares of first 5 natual numbers
 a = [i**2 for i in range(1,6)]
 print(a)
@@ -97,12 +97,12 @@ print()
 
 # sort and display original and sorted 
 d = [4,3,5,2,6]
-e = sorted(d)
+e = sorted(d) # Ascending
 print(d)
 print(e)
 print()
 d = [4,3,5,2,6]
-e = sorted(d,reverse=True)
+e = sorted(d,reverse=True) # Descending
 print(d)
 print(e)
 
