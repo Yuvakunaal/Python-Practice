@@ -121,3 +121,27 @@ print(max(d))
 
 # finding sum :-
 print(f"sum = {sum(a)}")
+
+# 2-d 
+a = [[1,2],
+     [3,4],
+     [5,6]]
+print(a[1][1])
+
+# looping over 2-d list
+print()
+
+for i in range(len(a)):
+    for j in range(len(a[0])):
+        print(a[i][j])
+        
+print()
+# minimum element without using 'min'
+a = [4,1,3,5]
+b = sorted(a)[0]
+print(f"min = {b}")
+
+# maximum element without using 'max'
+a = [4,1,3,5]
+b = sorted(a)[-1]
+print(f"max = {b}")
