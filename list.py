@@ -2,6 +2,10 @@
 # We create list using [] (square braces)
 
 # creating a list
+a = list()
+a.append(1)
+print(a)
+
 a = [10,20,30]
 print(type(a))
 
@@ -145,3 +149,8 @@ print(f"min = {b}")
 a = [4,1,3,5]
 b = sorted(a)[-1]
 print(f"max = {b}")
+
+# convert datatype to list
+a = {1,2,3}
+b = list(a)
+print(b)

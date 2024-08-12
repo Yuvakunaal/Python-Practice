@@ -1,5 +1,8 @@
 # Sets : Collection of ordered values without duplicates => {} 
 
+s = set()
+print(s)
+
 s = {6,5,3,4,1,2,6,2,11}
 print(s)
 
@@ -55,3 +58,8 @@ diff_s1 = s1 - s2
 diff_s2 = s2 - s1
 
 print(f"{union}\n{intersection}\n{diff_s1}\n{diff_s2}")
+
+# converting datatype to set
+l = [1,2]
+b = set(l)
+print(b)

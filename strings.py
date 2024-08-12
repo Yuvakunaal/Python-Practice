@@ -74,6 +74,10 @@ a = input("enter name : ").strip()
 b = a.split(" ")
 print(b)
 
+l = ["apple","banana","mango"]
+s = "*".join(l)  # seperator = "*" (asterisk)
+print(s)
+
 name = "kunaal"
 a = len(name)
 print(a)

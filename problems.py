@@ -109,3 +109,68 @@ def rem_dup2(l):
 # print(l)
     
     
+# Given a list of items, remove duplicates and display in ascending order,return list type
+# list -> set
+# set -> list
+def ord_dup(l):
+    b = set(l)
+    c = list(b)
+    return c
+# ans = ord_dup([4,3,5,6,1,4,3,7])
+# print(ans)
+
+
+# Tuple to String with seperator
+# Ex :- (1,2,3), ":" => 1:2:3
+# each element in tuple should be converted to string datatype
+# those elements should be there inside list
+
+def tup_to_str(tup,sep):
+    l = [str(i) for i in tup]
+    s = f" {sep} ".join(l)
+    return s
+def run():
+    seperators = ["!","@","#","$","%","^","&","*","-","+","=",":",";","/","\\","|",",",".","?"]
+    t = (1,2,3,4,5)
+    for i in seperators:
+        a = tup_to_str(t,i)
+        print(a)
+# run()
+
+# Find min and max elements from tuple
+# using methods :-
+def min_max1(t):    # 2n - Time complexity
+    return min(t),max(t)  
+# a,b = min_max1((5,3,4,2,7,5))
+# print(a,b)
+
+# or
+
+def min_max2(t):    # n*n = n^2 - Time complexity
+    a = list(set(t)) 
+    return a[0],a[-1]
+# a,b = min_max2((5,3,4,2,7,5))
+# print(a,b)
+
+# or
+# without using methods
+def min_max3(t):    # n - Time complexity
+    mini = t[0]
+    maxi = t[0]
+    for i in t:
+        if i<mini:
+            mini = i
+        if i>maxi:
+            maxi = i
+    return mini,maxi
+# a,b = min_max3((5,3,4,2,7,5))
+# print(a,b)
+
+
+# Return true if duplicates there or else return false
+def is_dup_there(l):
+    a = len(l)
+    b = len(set(l))
+    return a != b
+a = is_dup_there([1,2,3,5,1])
+print(a)
