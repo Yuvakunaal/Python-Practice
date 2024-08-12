@@ -111,7 +111,7 @@ a = [1,2,3]
 b = a.copy()
 print(b)
 
-# joining lists :-
+# joining or concatenating lists :-
 c = a+b
 print(c)
 

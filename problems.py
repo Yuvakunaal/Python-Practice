@@ -5,8 +5,8 @@ def factorial(num):
     for i in range(1,num+1):
         result *= i
     return result
-a = factorial(4)
-print(a)
+# a = factorial(4)
+# print(a)
 
 # Write a python code to find first 'n' fibonacii numbers :-
 # n = 5, 0 1 1 2 3
@@ -24,7 +24,7 @@ def fibo(n):
             a = b
             b = c
             print(c,end=" ")
-fibo(10)
+# fibo(10)
 
 # Write a python code to count no.of vowels and consonants in a string
 def count_v_c(s):
@@ -37,8 +37,8 @@ def count_v_c(s):
         else:
             c+=1
     return v,c
-vowels, consonants = count_v_c("kunaalmEgh")
-print(f"Count of Vowels = {vowels}, Count of Consonants = {consonants}")
+# vowels, consonants = count_v_c("kunaalmEgh")
+# print(f"Count of Vowels = {vowels}, Count of Consonants = {consonants}")
 
 # Write a python code to check whether the string is palindrome or not
 # abcddcba = 0 1 2 3 -4 -3 -2 -1
@@ -47,8 +47,8 @@ def is_pali(s):
         if s[i] != s[-i-1]:
             return "Not Palindrome"
     return "Palindrome"
-ans = is_pali("malayllam")
-print(ans)
+# ans = is_pali("malayllam")
+# print(ans)
 
 
 # Write a python code to check whether two strings are anagrams or not
@@ -63,5 +63,49 @@ def is_anag(s1,s2):
     if s11 == s22:
         return "Anagram"
     return "Not Anagram"
-a = is_anag("cat","tac")
-print(a)
+# a = is_anag("cat","tac")
+# print(a)
+
+
+# Python code to find the sublist sum to zero,
+# Ex : [1,2,-3,4,2,-6,7] => o/p : [1,2,-3],..
+def sublist(l):
+    dummy = []
+    length = len(l)
+    for i in range(length):
+        for j in range(i,length):
+            sub = l[i:j+1]
+            if sum(sub) == 0:
+                dummy.append(sub)
+    return dummy
+# l = [1,4,-1,-4,6,-3,-3]
+# a = sublist(l)
+# print(a)
+            
+
+# Python code to remove duplicates elements in list
+# Ex : [1,2,3,2,3] = [1,2,3]
+# [], 1 -> add, 2 -> add, 3-> add, 2 -> will not add, 3 -> will not add
+def rem_dup1(l):
+    dummy = []
+    for i in l:
+        if i not in dummy:
+            dummy.append(i)
+    return dummy
+# l = [1,2,3,2,3]
+# a = rem_dup1(l)
+# print(a)
+
+def rem_dup2(l):
+    dummy = []
+    l1 = l.copy()
+    for i in l1:
+        if i not in dummy:
+            dummy.append(i)
+        else:
+            l.remove(i)
+# l = [1,2,3,2,3]
+# a = rem_dup2(l)
+# print(l)
+    
+    
