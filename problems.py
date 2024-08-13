@@ -172,5 +172,81 @@ def is_dup_there(l):
     a = len(l)
     b = len(set(l))
     return a != b
-a = is_dup_there([1,2,3,5,1])
-print(a)
+# a = is_dup_there([1,2,3,5,1])
+# print(a)
+
+
+# Python code -> Tuple to dictionary with index
+# Ex : input = ("a","b","c")
+#      output = {"a" : 0,"b" : 1,"c" : 2}
+
+def tup_to_dic1(t):
+    dic = {}
+    for i in t:
+        dic[i] = t.index(i)
+    return dic
+# t = ("a","b","c","d")
+# a = tup_to_dic(t)
+# print(a)
+
+def tup_to_dic2(t):
+    return {i : t.index(i) for i in t}
+# t = ("a","b","c","d")
+# a = tup_to_dic2(t)
+# print(a)
+
+
+# Python code -> To count the occurances of elements in tuple
+# input : (1,2,3,2,1)
+# output : {1 : 2, 2 : 2, 3 : 1}
+def count_occurances1(t):
+    count_dic = {}
+    for i in t:
+        if i not in count_dic:
+            count_dic[i] = 1
+        else:
+            count_dic[i] += 1
+    return count_dic
+# a = count_occurances1((1,2,3,2,1))
+# print(a)
+
+from collections import Counter
+def count_occurance2(t):
+    return dict(Counter(t))
+# a = count_occurance2((1,2,3,4,1,4))
+# print(a)
+
+
+# Python code -> To filter the dictionary by keys with same specified prefix
+# input : dic = {'apple':1,'banana':2,'appricot':3,'mango':4}, prefix = "ap"
+# output : {'apple':1,'appricot':3}
+
+def same_prefix1(dic,prefix):
+    res_dic = {}
+    pref_len = len(prefix)
+    for key,value in dic.items():
+        if key[:pref_len] == prefix:
+            res_dic[key] = value
+    return res_dic
+# dic = {'apple':1,'banana':2,'appricot':3,'mango':4}
+# prefix = "ap"
+# a = same_prefix1(dic,prefix)
+# print(a)
+
+def same_prefix2(dic,prefix):
+    res_dic = {}
+    for key,value in dic.items():
+        if key.startswith(prefix):
+            res_dic[key] = value
+    return res_dic
+# dic = {'apple':1,'banana':2,'appricot':3,'mango':4}
+# prefix = "ap"
+# a = same_prefix2(dic,prefix)
+# print(a)
+
+def same_prefix3(dic,prefix):
+    return {key : value for key,value in dic.items() if key.startswith(prefix)}
+# dic = {'apple':1,'banana':2,'appricot':3,'mango':4,"appulu":5}
+# prefix = "ap"
+# a = same_prefix3(dic,prefix)
+# print(a)
