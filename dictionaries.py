@@ -48,7 +48,6 @@ a = dic1.items()
 print(a)
 
 # Looping over dictionaries
-
 # to access key
 for key in dic1 :
     print(key)
