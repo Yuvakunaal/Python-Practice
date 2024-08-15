@@ -250,3 +250,17 @@ def same_prefix3(dic,prefix):
 # prefix = "ap"
 # a = same_prefix3(dic,prefix)
 # print(a)
+
+# https://www.codechef.com/problems/REMOVECARDS?tab=statement :-
+from collections import Counter
+t = int(input())
+for i in range(t):
+    n = int(input())
+    l = list(map(int,input().split(" ")))
+    a = Counter(l)
+    # {1 : 2, 2 : 2,3 : 1}
+    # print(a.values())
+    b = max(a.values())
+    print(n-b)
+    
+    
