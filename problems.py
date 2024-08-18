@@ -262,5 +262,4 @@ for i in range(t):
     # print(a.values())
     b = max(a.values())
     print(n-b)
-    
-    
+
