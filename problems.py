@@ -252,14 +252,43 @@ def same_prefix3(dic,prefix):
 # print(a)
 
 # https://www.codechef.com/problems/REMOVECARDS?tab=statement :-
-from collections import Counter
-t = int(input())
-for i in range(t):
-    n = int(input())
-    l = list(map(int,input().split(" ")))
-    a = Counter(l)
-    # {1 : 2, 2 : 2,3 : 1}
-    # print(a.values())
-    b = max(a.values())
-    print(n-b)
+# from collections import Counter
+# t = int(input())
+# for i in range(t):
+#     n = int(input())
+#     l = list(map(int,input().split(" ")))
+#     a = Counter(l)
+#     # {1 : 2, 2 : 2,3 : 1}
+#     # print(a.values())
+#     b = max(a.values())
+#     print(n-b)
+
+
+# Prime number checker
+# n=5 -> 1,2,3,4,5 -> ==1,5 | !=2,3,4 
+# 2,n -> 2,3,4 -> n%i==0: return False,return True
+def is_prime(n):
+    if n==1:
+        return True
+    for i in range(2,n):
+        if n%i == 0:
+            return False
+    return True
+# ans = is_prime(4)
+# print(ans)
+
+n = 5
+if n==1:
+    print(True)
+else:
+    a = 0
+    for i in range(2,n):
+        if n%i == 0:
+            a = 1
+    if a==1:
+        print(False)
+    else:
+        print(True)
+        
+
 
