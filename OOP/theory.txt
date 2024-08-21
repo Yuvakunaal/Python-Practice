@@ -1,0 +1,17 @@
+OOP : Object Oriented Programming
+
+class :- It is blue print for creating objects (defined using 'class' keyword).
+object :- Instance of class (defined using any variable with value = className).
+Constructor :- Used to initialize objects of class (defined using __init__() function).
+
+- 4 important concepts
+        |
+        |--- Encapsulation 
+        |--- Abstraction
+        |--- Inheritance
+        |--- Polymorphism
+
+Encapsulation : Bundling of data & methods that operate on data within one unit.
+Abstraction   : Hiding complex implementations details & showing necessary features.
+Inheritance   : Creating new class from existing ones, inherit fields & methods.
+Polymorphism  : Ability to take many forms, allowing methods to do different, this is based on object it is acting upon.
