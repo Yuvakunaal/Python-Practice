@@ -6,7 +6,7 @@ Constructor :- Used to initialize objects of class (defined using __init__() fun
 
 - 4 important concepts
         |
-        |--- Encapsulation 
+        |--- Encapsulation
         |--- Abstraction
         |--- Inheritance
         |--- Polymorphism
