@@ -15,3 +15,9 @@ Encapsulation : Bundling of data & methods that operate on data within one unit.
 Abstraction   : Hiding complex implementations details & showing necessary features.
 Inheritance   : Creating new class from existing ones, inherit fields & methods.
 Polymorphism  : Ability to take many forms, allowing methods to do different, this is based on object it is acting upon.
+
+
+# Access modifiers :- 
+public : Accessible from any where. (self.<>)
+protected : Accessible only within the class. (self.)
+private : Accessible only within the class its subclass. ()
