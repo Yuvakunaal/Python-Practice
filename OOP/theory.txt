@@ -19,5 +19,9 @@ Polymorphism  : Ability to take many forms, allowing methods to do different, th
 
 # Access modifiers :- 
 public : Accessible from any where. (self.<>)
-protected : Accessible only within the class. (self.)
-private : Accessible only within the class its subclass. ()
+protected : Accessible only within the class. (self._<>)
+private : Accessible only within the class its subclass. (self.__<>)
+
+# class method : The method that are bound to the class and not the instance
+# @ : indicated it is a decorator
+# static method : That do not receive an implicit first argument, We dont need object creation.
