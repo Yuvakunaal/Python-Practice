@@ -1,0 +1,71 @@
+Package : A "package" is a collection of modules that are grouped together to provide specific functionality.
+
+*** Numpy learning *** 
+
+1. Introduction to NumPy
+Understanding the purpose of NumPy and its advantages over Python lists.
+Installation of NumPy and importing it in Python scripts.
+
+2. Arrays and Data Types
+Creation of NumPy arrays: ndarray (1D, 2D, and higher dimensions).
+Understanding array attributes: shape, size, ndim, itemsize, dtype.
+Different data types in NumPy (int, float, complex, bool, etc.).
+
+3. Array Indexing and Slicing
+Accessing elements, rows, columns, and subarrays.
+Boolean indexing and using condition-based filtering.
+Fancy indexing using integer arrays.
+
+4. Array Manipulation
+Reshaping arrays with .reshape(), .ravel(), and .flatten().
+Concatenation and splitting of arrays (concatenate, stack, vstack, hstack, split).
+Transpose of arrays and changing array dimensions (transpose, T).
+
+5. Mathematical Operations
+Element-wise operations: addition, subtraction, multiplication, division, exponentiation.
+Basic mathematical functions: np.sum(), np.mean(), np.median(), np.std(), np.var(), etc.
+Linear algebra operations: dot product, matrix multiplication, determinants, eigenvalues (dot, matmul, linalg.det, linalg.eig).
+
+6. Broadcasting
+Understanding broadcasting rules for performing operations on arrays of different shapes.
+Applications of broadcasting for efficient computations.
+
+7. Advanced Array Functions
+Using numpy.where(), numpy.select(), and numpy.choose() for conditional logic.
+Sorting arrays (sort, argsort) and finding unique elements (unique).
+Use of numpy.meshgrid() for generating coordinate matrices.
+
+8. Random Number Generation
+Generating random numbers with numpy.random module.
+Understanding and using random distributions: rand, randn, random, choice, etc.
+Setting random seeds for reproducibility.
+
+9. Array Broadcasting and Vectorization
+Understanding how NumPy handles broadcasting to perform operations on arrays of different shapes.
+Techniques to vectorize code using NumPy for performance gains.
+
+10. File I/O with NumPy
+Reading and writing arrays to files (savetxt, loadtxt, save, load).
+Handling binary files with numpy (save, load).
+
+11. Masked Arrays
+Using masked arrays to handle missing or invalid data.
+Operations on masked arrays and understanding masked elements.
+
+12. Performance Optimization
+Understanding the efficiency of NumPy operations.
+Tips for optimizing performance using NumPy: avoiding loops, using numexpr, etc.
+Profiling code to find bottlenecks.
+
+13. NumPy and Other Libraries
+Integration with other libraries like SciPy, pandas, and matplotlib.
+Using NumPy with machine learning libraries such as TensorFlow or PyTorch.
+
+14. Advanced Topics
+Broadcasting rules and their applications in advanced scenarios.
+Structured arrays and record arrays for heterogeneous data.
+Memory layout of arrays: C vs Fortran ordering and their implications on performance.
+
+15. NumPy Practices and Patterns
+Common patterns and idioms in NumPy for efficient data manipulation.
+Understanding pitfalls and best practices for using NumPy.
